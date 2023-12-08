@@ -1,0 +1,14 @@
+python train_dis_trip_disf.py \
+    --exp_suffix EnvAware \
+    --env_name EnvAware \
+    --model_version model_env_aware_LineDisF \
+    --epochs 200 \
+    --batch_size 10 \
+    --num_interaction_data_offline 10000000 \
+    --num_interaction_data 0 \
+    --offline_data_dir ../data/gt_pushing_train_cpbs --train_data_fn filter_tuple_list.txt \
+    --val_data_dir ../data/gt_pushing_test --val_data_fn data_tuple_list.txt \
+    --contrastive_positive_data_dir ../data/gt_pushing_train_cpsm \
+    --contrastive_negative_data_dir ../data/gt_pushing_train_cpct \
+    --num_epoch_every_visu 50 \
+    --closet_warm_up_epoch 200
