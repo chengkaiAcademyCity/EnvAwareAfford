@@ -1,0 +1,5 @@
+Bucket
+Kettle
+Jar
+Dispenser
+FoldingChair

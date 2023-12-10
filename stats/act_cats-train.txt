@@ -1,0 +1,7 @@
+Box
+KitchenPot
+TrashCan
+Bottle
+Basket
+Chair
+Bucket
