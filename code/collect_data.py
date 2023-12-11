@@ -431,9 +431,9 @@ while flag_robot and robotloop_cnt < 1000:
                 robot_init_y > lim_min_y_i and robot_init_y < lim_max_y_i):
             flag_robot = True
             break
-    loop_cnt += 1
+    robotloop_cnt += 1
 
-if loop_cnt > 999:
+if robotloop_cnt > 999:
     print('No Robot Pixel Position! Quit!\n')
     flog.write('No Robot Pixel Position! Quit!\n')
     flog.close()
